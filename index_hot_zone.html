@@ -1,0 +1,726 @@
+<!-- style-->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    body {
+        background: linear-gradient(to bottom, #790053 0%, #790053 26%) !important;
+        
+    }
+    .price{
+        font-size: 13px!important;
+    }
+    .lzd-act-richtext {
+        font-family: Arial, Verdana, sans-serif !important;
+        line-height: normal !important;
+        word-wrap: break-word;
+        word-break: keep-all;
+        overflow: hidden;
+        padding: 0px;
+        margin-top: 0px;
+    }
+
+    .footer {
+        padding-bottom: 10px;
+        position: relative;
+        visibility: collapse !important;
+    }
+
+    .lzd-act-richtext img {
+        max-width: 70% !important;
+        display: block;
+        margin: 0 auto;
+        padding: 6px;
+    }
+
+    #header-wrapper {
+        height: 0px !important;
+    }
+
+    h6 {
+        overflow-wrap: break-word;
+        font-weight: 300;
+    }
+
+    .lzd-act-richtext h6,
+    .lzd-act-richtext a {
+        overflow-wrap: break-word;
+        font-size: 13px !important;
+        margin: 0px !important;
+        text-decoration: none !important;
+        color: white !important;
+        text-align: center !important;
+        font-weight: 300;
+    }
+
+    .details {
+        background: linear-gradient(to left, #4e0070 4%, #8a0046 82%);
+        margin-left: 42vw;
+        height: 100%;
+        color: white;
+        float: right;
+        width: 92vw;
+    }
+
+    .manu-details {
+        background: #3d003a;
+    }
+
+    .manu-details a {
+        color: white;
+        height: 20vh;
+        padding: 15px 30px 10px 30px;
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: #870049;
+
+    }
+
+    .con-width-re {
+        width: 25%;
+        padding: 20px 20px 0px 20px;
+        text-align: center;
+    }
+
+    .shadow {
+        -webkit-box-shadow: inset 10px 1px 11px 0px rgba(0, 0, 0, 0.48);
+        -moz-box-shadow: inset 10px 1px 11px 0px rgba(0, 0, 0, 0.48);
+        box-shadow: inset 10px 1px 11px 0px rgba(0, 0, 0, 0.48);
+    }
+
+    .col a img {
+        width: 92% !important;
+        padding-bottom: 3px;
+    }
+
+    .menu-icons {
+        width: 55%;
+        margin-left: 25%;
+        padding-bottom: 5px;
+    }
+</style>
+<!-- Navigation & Mega Deals -->
+
+<body>
+    <div class="row">
+        <div class="col-sm-5 manu-details" style="position: fixed; width:43%; height: 100%; z-index: 100;">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical"
+                style="margin-right: -20px;">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                    aria-controls="v-pills-home" aria-selected="true" style="padding-top: 20px;">
+                    <img class="menu-icons" src="https://img.alicdn.com/tfs/TB1uD0Hk7L0gK0jSZFxXXXWHVXa-100-100.png">
+                    <br>
+                    <h6 style="text-align: center; color: white;">Mega Deals</h6>
+                </a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                    aria-controls="v-pills-profile" aria-selected="false">
+                    <img class="menu-icons" src="https://img.alicdn.com/tfs/TB1QgxHk1H2gK0jSZFEXXcqMpXa-100-100.png">
+                    <br>
+                    <h6 style="text-align: center; color: white;">Payment Partner Ofer</h6>
+                </a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                    aria-controls="v-pills-messages" aria-selected="false"> <img class="menu-icons"
+                        src="https://img.alicdn.com/tfs/TB1QzVGk9f2gK0jSZFPXXXsopXa-100-100.png">
+                    <br>
+                    <h6 style="text-align: center; color: white;">Categories</h6>
+                </a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                    aria-controls="v-pills-settings" aria-selected="false" style="padding-top: 20px;">
+                    <img class="menu-icons" src="https://img.alicdn.com/tfs/TB1zaBFk2b2gK0jSZK9XXaEgFXa-100-100.png">
+                    <br>
+                    <h6 style="text-align: center; color: white;">Deals of the week</h6>
+                </a>
+                <a class="nav-link" id="v-pills-extra-tab" data-toggle="pill" href="#v-pills-extra" role="tab"
+                    aria-controls="v-pills-extra" aria-selected="false">
+                    <img class="menu-icons" src="https://img.alicdn.com/tfs/TB160VKk4D1gK0jSZFyXXciOVXa-100-100.png">
+                    <br>
+                    <h6 style="text-align: center; color: white;">Shop By price & Combo offer</h6>
+                </a>
+            </div>
+        </div>
+        <!-- Mega Deals  -->
+
+        <div class="col-sm-7 details shadow">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                    aria-labelledby="v-pills-home-tab">
+                    <div class="row">
+                        <div class="col con-width-re">
+                            <a
+                                href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-tv?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1uI4Gk8v0gK0jSZKbXXbK2FXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">TV,Audio, Cameras, Gaming</h6>
+                        </div>
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-home-appliances?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1Od8Gk.D1gK0jSZFGXXbd3FXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Home Appliances</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-mens-fashion?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1oE8GkYr1gK0jSZR0XXbP8XXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Men's Fashion</h6>
+                        </div>
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-womens-fashion?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1fGNIk5_1gK0jSZFqXXcpaXXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"></a><br>
+                            <h6 class="text-center mxt-60">Women's Fashion</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-phones?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1_RdHk1H2gK0jSZFEXXcqMpXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Phones & Accessories</h6>
+                        </div>
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-computers?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1_KFJk7T2gK0jSZPcXXcKkpXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Computers, Laptops & Accessories</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-home-living?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1VldHk1H2gK0jSZFEXXcqMpXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Home & Living</h6>
+                        </div>
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-beauty?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1vKJJk7T2gK0jSZPcXXcKkpXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Health & Beauty</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-music?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1j08Jk1L2gK0jSZFmXXc7iXXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Music & Entertainment</h6>
+                        </div>
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-global?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1jJXJk4v1gK0jSZFFXXb0sXXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Global Collections</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col con-width-re">
+                                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-sports?hybrid=1">
+                                        <img src="https://img.alicdn.com/tfs/TB19oJKkW61gK0jSZFlXXXDKFXa-100-100.png"
+                                            class="center-block sub-listing-img"
+                                            style="object-fit: contain; width: 100%;"><br></a>
+                                    <h6 class="text-center mxt-60">Sports & Outdoors</h6>
+                                </div>
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-digital-goods?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB17sBIk7L0gK0jSZFxXXXWHVXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Digital Goods</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col con-width-re">
+                                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-baby?hybrid=1">
+                                        <img src="https://img.alicdn.com/tfs/TB1oo4GkYr1gK0jSZR0XXbP8XXa-100-100.png"
+                                            class="center-block sub-listing-img"
+                                            style="object-fit: contain; width: 100%;"><br></a>
+                                    <h6 class="text-center mxt-60">Baby, Kids & Toys</h6>
+                                </div>
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-books?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1VQXHk7Y2gK0jSZFgXXc5OFXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Books & Stationeries</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col con-width-re">
+                                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-motors?hybrid=1">
+                                        <img src="https://img.alicdn.com/tfs/TB1EaFIk5_1gK0jSZFqXXcpaXXa-100-100.png"
+                                            class="center-block sub-listing-img"
+                                            style="object-fit: contain; width: 100%;"><br></a>
+                                    <h6 class="text-center mxt-60">Automotive & Motorcycles</h6>
+                                </div>
+                        <div class="col con-width-re">
+                            <a href="#">
+                                <img src="https://img.alicdn.com/tfs/TB1hb4FkQP2gK0jSZPxXXacQpXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%; display:none"><br></a>
+                            <h6 class="text-center mxt-60"></h6>
+                        </div>
+                    </div>
+                </div>
+        <!-- Payment Partner Ofer -->
+
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
+                    style="height: 104vh;">
+                    <div class="row">
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/bKash?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1eLBvk.T1gK0jSZFrXXcNCXXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">bkash</h6>
+                        </div>
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/Brac?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1B3tzk4D1gK0jSZFyXXciOVXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Brac Bank</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col con-width-re">
+                            <a
+                                href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/dhaka-bank?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1aRRyk4D1gK0jSZFKXXcJrVXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Dhaka Bank</h6>
+                        </div>
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/SEBL?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1.IgUmfb2gK0jSZK9XXaEgFXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">SEBL</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/Mercantile?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1_bRzkYj1gK0jSZFuXXcrHpXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Mercantile Bank Limited</h6>
+                        </div>
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/UCB?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB19YG1kebviK0jSZFNXXaApXXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">UCB</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- Category -->
+
+                <div class="col-sm-7 details shadow">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="#v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
+                            <div class="row">
+                                <div class="col con-width-re">
+                                    <a
+                                        href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-tv?hybrid=1">
+                                        <img src="https://img.alicdn.com/tfs/TB1uI4Gk8v0gK0jSZKbXXbK2FXa-100-100.png"
+                                            class="center-block sub-listing-img"
+                                            style="object-fit: contain; width: 100%;"><br></a>
+                                    <h6 class="text-center mxt-60">TV,Audio, Cameras, Gaming</h6>
+                                </div>
+                                <div class="col con-width-re">
+                                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-home-appliances?hybrid=1">
+                                        <img src="https://img.alicdn.com/tfs/TB1Od8Gk.D1gK0jSZFGXXbd3FXa-100-100.png"
+                                            class="center-block sub-listing-img"
+                                            style="object-fit: contain; width: 100%;"><br></a>
+                                    <h6 class="text-center mxt-60">Home Appliances</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col con-width-re">
+                                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-mens-fashion?hybrid=1">
+                                        <img src="https://img.alicdn.com/tfs/TB1oE8GkYr1gK0jSZR0XXbP8XXa-100-100.png"
+                                            class="center-block sub-listing-img"
+                                            style="object-fit: contain; width: 100%;"><br></a>
+                                    <h6 class="text-center mxt-60">Men's Fashion</h6>
+                                </div>
+                                <div class="col con-width-re">
+                                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-womens-fashion?hybrid=1">
+                                        <img src="https://img.alicdn.com/tfs/TB1fGNIk5_1gK0jSZFqXXcpaXXa-100-100.png"
+                                            class="center-block sub-listing-img"
+                                            style="object-fit: contain; width: 100%;"></a><br>
+                                    <h6 class="text-center mxt-60">Women's Fashion</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col con-width-re">
+                                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-phones?hybrid=1">
+                                        <img src="https://img.alicdn.com/tfs/TB1_RdHk1H2gK0jSZFEXXcqMpXa-100-100.png"
+                                            class="center-block sub-listing-img"
+                                            style="object-fit: contain; width: 100%;"><br></a>
+                                    <h6 class="text-center mxt-60">Phones & Accessories</h6>
+                                </div>
+                                <div class="col con-width-re">
+                                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-computers?hybrid=1">
+                                        <img src="https://img.alicdn.com/tfs/TB1_KFJk7T2gK0jSZPcXXcKkpXa-100-100.png"
+                                            class="center-block sub-listing-img"
+                                            style="object-fit: contain; width: 100%;"><br></a>
+                                    <h6 class="text-center mxt-60">Computers, Laptops & Accessories</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col con-width-re">
+                                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-home-living?hybrid=1">
+                                        <img src="https://img.alicdn.com/tfs/TB1VldHk1H2gK0jSZFEXXcqMpXa-100-100.png"
+                                            class="center-block sub-listing-img"
+                                            style="object-fit: contain; width: 100%;"><br></a>
+                                    <h6 class="text-center mxt-60">Home & Living</h6>
+                                </div>
+                                <div class="col con-width-re">
+                                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-beauty?hybrid=1">
+                                        <img src="https://img.alicdn.com/tfs/TB1vKJJk7T2gK0jSZPcXXcKkpXa-100-100.png"
+                                            class="center-block sub-listing-img"
+                                            style="object-fit: contain; width: 100%;"><br></a>
+                                    <h6 class="text-center mxt-60">Health & Beauty</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col con-width-re">
+                                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-music?hybrid=1">
+                                        <img src="https://img.alicdn.com/tfs/TB1j08Jk1L2gK0jSZFmXXc7iXXa-100-100.png"
+                                            class="center-block sub-listing-img"
+                                            style="object-fit: contain; width: 100%;"><br></a>
+                                    <h6 class="text-center mxt-60">Music & Entertainment</h6>
+                                </div>
+                                <div class="col con-width-re">
+                                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-global?hybrid=1">
+                                        <img src="https://img.alicdn.com/tfs/TB1jJXJk4v1gK0jSZFFXXb0sXXa-100-100.png"
+                                            class="center-block sub-listing-img"
+                                            style="object-fit: contain; width: 100%;"><br></a>
+                                    <h6 class="text-center mxt-60">Global Collections</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col con-width-re">
+                                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-sports?hybrid=1">
+                                                <img src="https://img.alicdn.com/tfs/TB19oJKkW61gK0jSZFlXXXDKFXa-100-100.png"
+                                                    class="center-block sub-listing-img"
+                                                    style="object-fit: contain; width: 100%;"><br></a>
+                                            <h6 class="text-center mxt-60">Sports & Outdoors</h6>
+                                        </div>
+                                <div class="col con-width-re">
+                                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-digital-goods?hybrid=1">
+                                        <img src="https://img.alicdn.com/tfs/TB17sBIk7L0gK0jSZFxXXXWHVXa-100-100.png"
+                                            class="center-block sub-listing-img"
+                                            style="object-fit: contain; width: 100%;"><br></a>
+                                    <h6 class="text-center mxt-60">Digital Goods</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col con-width-re">
+                                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-baby?hybrid=1">
+                                                <img src="https://img.alicdn.com/tfs/TB1oo4GkYr1gK0jSZR0XXbP8XXa-100-100.png"
+                                                    class="center-block sub-listing-img"
+                                                    style="object-fit: contain; width: 100%;"><br></a>
+                                            <h6 class="text-center mxt-60">Baby, Kids & Toys</h6>
+                                        </div>
+                                <div class="col con-width-re">
+                                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-books?hybrid=1">
+                                        <img src="https://img.alicdn.com/tfs/TB1VQXHk7Y2gK0jSZFgXXc5OFXa-100-100.png"
+                                            class="center-block sub-listing-img"
+                                            style="object-fit: contain; width: 100%;"><br></a>
+                                    <h6 class="text-center mxt-60">Books & Stationeries</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col con-width-re">
+                                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-motors?hybrid=1">
+                                                <img src="https://img.alicdn.com/tfs/TB1EaFIk5_1gK0jSZFqXXcpaXXa-100-100.png"
+                                                    class="center-block sub-listing-img"
+                                                    style="object-fit: contain; width: 100%;"><br></a>
+                                            <h6 class="text-center mxt-60">Automotive & Motorcycles</h6>
+                                        </div>
+                                <div class="col con-width-re">
+                                    <a href="#">
+                                        <img src="https://img.alicdn.com/tfs/TB1hb4FkQP2gK0jSZPxXXacQpXa-100-100.png"
+                                            class="center-block sub-listing-img"
+                                            style="object-fit: contain; width: 100%; display:none"><br></a>
+                                    <h6 class="text-center mxt-60"></h6>
+                                </div>
+                            </div>
+                        </div>
+
+            <!-- Deals of the week -->
+
+        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <div class="row">
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/products/samsung-galaxy-m40-smartphone-63-6gb-ram-128gb-rom-32mp-camera-i112778539-s1029822754.html?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1hZ7LmoT1gK0jSZFhXXaAtVXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Samsung Galaxy M40</h6>
+                            <p class="text-center price"><b>Price: </b> TK.25,690 </p>
+                        </div>
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/products/1394cb-motorized-treadmill-15-chp-black-i100838527-s1014842676.html?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1hZ7LmoT1gK0jSZFhXXaAtVXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Motorized Treadmill </h6>    
+                            <p class="text-center price"><b>Price: </b> TK.28,879 </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/products/vikan-hd-led-tv-32-black-smile-i2414186-s62529796.html?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1hZ7LmoT1gK0jSZFhXXaAtVXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Vikan HD LED TV </h6>
+                            <p class="text-center price"><b>Price: </b> TK.7,950 </p>
+                        </div>
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/products/umidigi-one-smartphone-59-4gb-ram-32gb-rom-i116458820-s1035426859.html?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1hZ7LmoT1gK0jSZFhXXaAtVXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Umidigi One Smartphone</h6>
+                            <p class="text-center price"><b>Price: </b> TK.10,549 </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/products/naviforce-nf9117-black-stainless-steel-analog-watch-for-men-black-i437708-s1734176.html?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1hZ7LmoT1gK0jSZFhXXaAtVXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Naviforce Watch For Men</h6>
+                            <p class="text-center price"><b>Price: </b> TK.1,265 </p>
+                        </div>
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/products/amazfit-bip-smart-watch-onyx-black-i2449884-s62651001.html?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1hZ7LmoT1gK0jSZFhXXaAtVXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Amazfit Bip Smart Watch</h6>
+                            <p class="text-center price"><b>Price: </b> TK.2,150 </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/products/huawei-nova-3i-smartphone-63-4-gb-128-gb-four-ai-camera16mp2mp-24mp-2mp-irish-purple-i100970342-s1014962512.html?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1hZ7LmoT1gK0jSZFhXXaAtVXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Huawei Nova 3i Smartphone</h6>
+                            <p class="text-center price"><b>Price: </b> TK.19,299</p>
+                        </div>
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/products/i-life-zed-air-pro-125-inch-hd-display-laptop-with-windowsn10-genuine-i100960103-s1014951521.html?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1hZ7LmoT1gK0jSZFhXXaAtVXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">I-Life Zed Air Pro</h6>
+                            <p class="text-center price"><b>Price: </b> TK.12,650</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/products/xiaomi-redmi-7a-545-2gb-ram-32gb-rom-12mp-ai-rear-camera-i114802685-s1032618487.html?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1hZ7LmoT1gK0jSZFhXXaAtVXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Xiaomi Redmi 7A</h6>
+                            <p class="text-center price"><b>Price: </b> TK.10,369</p>
+                        </div>
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/products/redmi-airdots-tws-bluetooth-50-earbuds-black-i110788485-s1027774478.html?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1hZ7LmoT1gK0jSZFhXXaAtVXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Redmi AirDots </h6>
+                            <p class="text-center price"><b>Price: </b> TK.10,369</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/products/asus-vivobook-x540ya-amd-e1-6010-135ghz-4gb-ddr3-1tb-156-inch-hd-1366x768-antiglare-display-free-dos-black-notebook-i109158604-s1025408614.html?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1hZ7LmoT1gK0jSZFhXXaAtVXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Asus VivoBook X540YA</h6>
+                            <p class="text-center price"><b>Price: </b> TK.21,334</p>
+                        </div>
+                        <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/products/original-huawei-honor-band-5-smart-wristband-full-touch-color-display-i114196364-s1031736122.html?hybrdi=1">
+                                <img src="https://img.alicdn.com/tfs/TB1hZ7LmoT1gK0jSZFhXXaAtVXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Huawei Honor Band 5 </h6>
+                            <p class="text-center price"><b>Price: </b> TK.2,375</p>
+                        </div>
+                    </div>
+                </div>
+
+
+<!-- Top Brands  -->
+<div class="tab-pane fade" id="v-pills-extra" role="tabpanel" aria-labelledby="v-pills-extra-tab">
+            <!-- <div class="row">
+                <div class="col con-width-re">
+                    <a
+                        href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-tv?hybrid=1">
+                        <img src="https://img.alicdn.com/tfs/TB1uI4Gk8v0gK0jSZKbXXbK2FXa-100-100.png"
+                            class="center-block sub-listing-img"
+                            style="object-fit: contain; width: 100%;"><br></a>
+                    <h6 class="text-center mxt-60">TV,Audio, Cameras, Gaming</h6>
+                </div>
+                <div class="col con-width-re">
+                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-home-appliances?hybrid=1">
+                        <img src="https://img.alicdn.com/tfs/TB1Od8Gk.D1gK0jSZFGXXbd3FXa-100-100.png"
+                            class="center-block sub-listing-img"
+                            style="object-fit: contain; width: 100%;"><br></a>
+                    <h6 class="text-center mxt-60">Home Appliances</h6>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="col con-width-re">
+                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/september-super-sale/deals-under-499?hybrid=1">
+                        <img src="https://img.alicdn.com/tfs/TB1oE8GkYr1gK0jSZR0XXbP8XXa-100-100.png"
+                            class="center-block sub-listing-img"
+                            style="object-fit: contain; width: 100%;"><br></a>
+                    <h6 class="text-center mxt-60">Price Under Tk. 499</h6>
+                </div>
+                <div class="col con-width-re">
+                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/september-super-sale/deals-under-1499?hybrid=1">
+                        <img src="https://img.alicdn.com/tfs/TB1fGNIk5_1gK0jSZFqXXcpaXXa-100-100.png"
+                            class="center-block sub-listing-img"
+                            style="object-fit: contain; width: 100%;"></a><br>
+                    <h6 class="text-center mxt-60">Price Under Tk. 1499</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col con-width-re">
+                    <a href="https://www.daraz.pk/wow/i/pk/campaigns/bundles-for-all-combo?">
+                        <img src="https://img.alicdn.com/tfs/TB1vKJJk7T2gK0jSZPcXXcKkpXa-100-100.png"
+                            class="center-block sub-listing-img"
+                            style="object-fit: contain; width: 100%;"><br></a>
+                    <h6 class="text-center mxt-60">Combo Offer</h6>
+                </div>
+                <div class="col con-width-re">
+                    <a href="https://www.daraz.pk/wow/i/pk/campaigns/bundles-for-everyone?">
+                        <img src="https://img.alicdn.com/tfs/TB1_KFJk7T2gK0jSZPcXXcKkpXa-100-100.png"
+                            class="center-block sub-listing-img"
+                            style="object-fit: contain; width: 100%;"><br></a>
+                    <h6 class="text-center mxt-60">Bundle Offer</h6>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col con-width-re">
+                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-home-living?hybrid=1">
+                        <img src="https://img.alicdn.com/tfs/TB1VldHk1H2gK0jSZFEXXcqMpXa-100-100.png"
+                            class="center-block sub-listing-img"
+                            style="object-fit: contain; width: 100%;"><br></a>
+                    <h6 class="text-center mxt-60">Home & Living</h6>
+                </div>
+                <div class="col con-width-re">
+                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-phones?hybrid=1">
+                        <img src="https://img.alicdn.com/tfs/TB1_RdHk1H2gK0jSZFEXXcqMpXa-100-100.png"
+                            class="center-block sub-listing-img"
+                            style="object-fit: contain; width: 100%;"><br></a>
+                    <h6 class="text-center mxt-60">Phones & Accessories</h6>
+                </div>
+            </div> 
+             <div class="row">
+                <div class="col con-width-re">
+                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-music?hybrid=1">
+                        <img src="https://img.alicdn.com/tfs/TB1j08Jk1L2gK0jSZFmXXc7iXXa-100-100.png"
+                            class="center-block sub-listing-img"
+                            style="object-fit: contain; width: 100%;"><br></a>
+                    <h6 class="text-center mxt-60">Music & Entertainment</h6>
+                </div>
+                <div class="col con-width-re">
+                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-global?hybrid=1">
+                        <img src="https://img.alicdn.com/tfs/TB1jJXJk4v1gK0jSZFFXXb0sXXa-100-100.png"
+                            class="center-block sub-listing-img"
+                            style="object-fit: contain; width: 100%;"><br></a>
+                    <h6 class="text-center mxt-60">Global Collections</h6>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-sports?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB19oJKkW61gK0jSZFlXXXDKFXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Sports & Outdoors</h6>
+                        </div>
+                <div class="col con-width-re">
+                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-digital-goods?hybrid=1">
+                        <img src="https://img.alicdn.com/tfs/TB17sBIk7L0gK0jSZFxXXXWHVXa-100-100.png"
+                            class="center-block sub-listing-img"
+                            style="object-fit: contain; width: 100%;"><br></a>
+                    <h6 class="text-center mxt-60">Digital Goods</h6>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-baby?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1oo4GkYr1gK0jSZR0XXbP8XXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Baby, Kids & Toys</h6>
+                        </div>
+                <div class="col con-width-re">
+                    <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-books?hybrid=1">
+                        <img src="https://img.alicdn.com/tfs/TB1VQXHk7Y2gK0jSZFgXXc5OFXa-100-100.png"
+                            class="center-block sub-listing-img"
+                            style="object-fit: contain; width: 100%;"><br></a>
+                    <h6 class="text-center mxt-60">Books & Stationeries</h6>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col con-width-re">
+                            <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/11-11-MC/mega-deals-motors?hybrid=1">
+                                <img src="https://img.alicdn.com/tfs/TB1EaFIk5_1gK0jSZFqXXcpaXXa-100-100.png"
+                                    class="center-block sub-listing-img"
+                                    style="object-fit: contain; width: 100%;"><br></a>
+                            <h6 class="text-center mxt-60">Automotive & Motorcycles</h6>
+                        </div>
+                <div class="col con-width-re">
+                    <a href="#">
+                        <img src="https://img.alicdn.com/tfs/TB1hb4FkQP2gK0jSZPxXXacQpXa-100-100.png"
+                            class="center-block sub-listing-img"
+                            style="object-fit: contain; width: 100%; display:none"><br></a>
+                    <h6 class="text-center mxt-60"></h6>
+                </div>
+            </div>-->
+        </div> 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
